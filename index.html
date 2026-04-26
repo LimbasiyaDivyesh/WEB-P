@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="icon" type="image/png" href="/img/app/logo.png"/>
+
+    <!-- Mobile & PWA -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#f3f4f6">
+
+    <!-- PWA Fullscreen Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes"> <!-- ✅ Added -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Smart Dairy" />
+    <link rel="apple-touch-icon" href="/512.png" />
+    <title>Smart Dairy</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script type="module" crossorigin src="/assets/index-UZ0PSaye.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D9qwUSd6.css">
+<link rel="manifest" href="/manifest.webmanifest"></head>
+
+<body>
+<div id="root">
+    <div class="app-loader">
+        <div class="loader-card">
+            <div class="logo-wrap">
+                <img src="/img/app/logo.png" alt="Smart Dairy" />
+                <div class="glow"></div>
+            </div>
+
+            <h1>Smart Dairy</h1>
+            <p>Preparing your dashboard...</p>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    html, body {
+        overscroll-behavior-y: contain;
+        touch-action: pan-y;
+    }
+
+    body {
+        overscroll-behavior-y: none;
+        touch-action: pan-y;
+    }
+
+    .app-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+        font-family: 'Roboto', sans-serif;
+        z-index: 9999;
+    }
+
+    .loader-card {
+        text-align: center;
+        padding: 30px 25px;
+        border-radius: 20px;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        width: 260px;
+    }
+
+    .logo-wrap {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 15px;
+    }
+
+    .logo-wrap img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+           object-fit: contain;
+        z-index: 2;
+        position: relative;
+    }
+
+    .glow {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(99,102,241,0.4), transparent);
+        animation: pulse 1.8s infinite ease-in-out;
+        z-index: 1;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(0.9); opacity: 0.7; }
+        50% { transform: scale(1.2); opacity: 0.3; }
+        100% { transform: scale(0.9); opacity: 0.7; }
+    }
+
+    .loader-card h1 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #005bc0;
+        margin-bottom: 5px;
+    }
+
+    .loader-card p {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 15px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 5px;
+        background: #e5e7eb;
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    .progress {
+        height: 100%;
+        width: 40%;
+        background: linear-gradient(90deg, #6366f1, #005bc0);
+        animation: loading 1.5s infinite;
+        border-radius: 999px;
+    }
+
+    @keyframes loading {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(250%); }
+    }
+</style>
+
+</body>
+</html>
