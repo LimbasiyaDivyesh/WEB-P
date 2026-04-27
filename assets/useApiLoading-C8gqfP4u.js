@@ -1,1 +1,0 @@
-import{c as e,g as n,i as s}from"./index-UZ0PSaye.js";const d=()=>{const[a,i]=e.useState(n()>0),[r,u]=e.useState(n());return e.useEffect(()=>{const t=()=>{const o=n();i(o>0),u(o)};return t(),window.addEventListener(s,t),()=>{window.removeEventListener(s,t)}},[]),{isLoading:a,count:r}};export{d as u};
