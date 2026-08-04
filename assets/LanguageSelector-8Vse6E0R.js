@@ -1,0 +1,1 @@
+const a=[{targetLang:"en",code:"/en/en",label:"English"},{targetLang:"hi",code:"/en/hi",label:"Hindi"},{targetLang:"gu",code:"/en/gu",label:"Gujarati"},{targetLang:"mr",code:"/en/mr",label:"Marathi"},{targetLang:"pa",code:"/en/pa",label:"Punjabi"},{targetLang:"ta",code:"/en/ta",label:"Tamil"}];export{a as L};
