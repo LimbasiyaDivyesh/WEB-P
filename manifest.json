@@ -1,11 +1,11 @@
 {
-  "name": "SnS Dairy",
-  "short_name": "SnS Dairy",
+  "name": "Milk Dhara",
+  "short_name": "Milk Dhara",
   "description": "Digital Dairy Management System",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f3f4f6",
-  "theme_color": "#f3f4f6",
+  "theme_color": "#0e47a1",
   "orientation": "portrait",
   "icons": [
     {
